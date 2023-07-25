@@ -27,8 +27,7 @@ class ViewController: UIViewController {
     ]
     
     @IBAction func buttonAskTapped(_ sender: UIButton) {
-        viewImageQuestion.image = askImage[count]
-        count += 1
+        viewImageQuestion.image = askImage.randomElement()
     }
 }
 
